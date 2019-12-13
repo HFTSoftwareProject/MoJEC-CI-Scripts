@@ -6,7 +6,7 @@ docker stop mojec-backend
 docker rm mojec-backend
 
 # Pull the new version from DockerHub
-docker pulll hftstuttgart/mojec-backend
+docker pull hftstuttgart/mojec-backend
 
 # Build the container and start it
-docker rm -p 8080:8080 --name mojec-backend -hftstuttgart/mojec-backend:latest
+docker run -p 8080:8080 --name mojec-backend -hftstuttgart/mojec-backend:latest
